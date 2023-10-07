@@ -10,7 +10,7 @@ spec:
   selector:
     matchLabels:
       name: worker-app
-    template:
+  template:
       metadata:
         name: worker-app-pod
         labels:

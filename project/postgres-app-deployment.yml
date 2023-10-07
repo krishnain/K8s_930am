@@ -10,22 +10,22 @@ spec:
   selector:
     matchLabels:
       name: postgres-app
-    template:
-      metadata:
-        name: postgres-pod
-        labels:
-          name: postgres-app
-      spec:
-        containers:
-          - name: postgres
-            image: postgres
-            env:
-              - name: POSTGRES_PASSWORD
-                value: intelliqit
-              - name: POSTGRES_USER
-                value: myuser
-              - name: POSTGRES_DB
-                value: mydb
+  template:
+    metadata:
+      name: postgres-pod
+      labels:
+        name: postgres-app
+    spec:
+      containers:
+        - name: postgres
+          image: postgres
+          env:
+            - name: POSTGRES_PASSWORD
+              value: intelliqit
+            - name: POSTGRES_USER
+              value: myuser
+            - name: POSTGRES_DB
+              value: mydb
 ...
 
 
